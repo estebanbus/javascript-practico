@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        main {
+            width: 60%;
+            margin: 16px;
+        }
+    </style>
+    <script>
+        // 2️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.
+        function imprimirPrimerElementoArray(arr) {
+                console.log(arr[1])
+            }
+
+        // 3️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el array completo).
+
+        function imprimirElementoPorElemento(arr) {
+            for (let i = 0; i < arr.length; i++) {
+                console.log(arr[i])
+            }   
+        }
+
+        
+    </script>
+</head>
+<body>
+    <main>
+        <h1>Arrayz</h1>
+
+        <h2>¿Qué es un array?</h2>
+        <p>
+            Es una lista de elementos.
+                <br><strong>
+                    const array = [1, 'jaja', true, false, { nombre: 'lala', edad: 3 }];
+                </strong> 
+            
+        </p>
+
+        <h2>¿Que es un objeto?</h2>
+        <p>Es una lista de elementos PERO cada elemento tiene un nombre clave.
+           <br> <strong>
+                const obj = { <br>
+                nombre: 'Fulanito',<br>
+                dad: 3,<br>
+                comidasFavoritas: ['Pollo frito', 'vegetales'], };       
+            </strong>
+        </p>
+
+        <h2>¿Cuándo es mejor usar objetos o arrays?</h2>
+            <p>Arrays cuando lo que haremos en un elemento es lo mismo que en todos los demás (la regla se puede incumplir). Mientras que un objeto cuando los nombres de cada elemento son importantes para nuestro algoritmo.</p>
+
+            <h2>¿Puedo mezclar arrays con objetos o incluso objetos con arrays?</h2>
+            <p>Sí. Los arrays pueden guardar objetos. Y los objetos pueden guardar arrays entre sus propiedades.
+            </p>
+    </main>
+    
+</body>
+</html>
